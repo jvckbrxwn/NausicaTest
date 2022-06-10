@@ -1,0 +1,138 @@
+<linker>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Auxiliary.GliderRocketController" preserve="all" />
+    <type fullname="AuxiliaryTrigger" preserve="all" />
+    <type fullname="BoulderObstacleTrigger" preserve="all" />
+    <type fullname="FullscreenButtonHelper" preserve="all" />
+    <type fullname="LeaderboardItem" preserve="all" />
+    <type fullname="LocationItem" preserve="all" />
+    <type fullname="Obstacle.Balloon.BalloonObstacleController" preserve="all" />
+    <type fullname="Obstacle.Balloon.BalloonVisual" preserve="all" />
+    <type fullname="Obstacle.Blades.BladesObstacleController" preserve="all" />
+    <type fullname="Obstacle.Blades.BladesObstacleTrigger" preserve="all" />
+    <type fullname="Obstacle.Bounder.BoulderObstacleController" preserve="all" />
+    <type fullname="Obstacle.ConcretePillars.ConcretePillarsObstacleController" preserve="all" />
+    <type fullname="Obstacle.DeathSquare.DeathSquareObstacleController" preserve="all" />
+    <type fullname="Obstacle.DoubleSidePillars.DoubleSidePillarsObstacleController" preserve="all" />
+    <type fullname="Obstacle.ElectricCharge.ElectricChargeObstacleController" preserve="all" />
+    <type fullname="Obstacle.ElectricCharge.ElectricChargeVisual" preserve="all" />
+    <type fullname="Obstacle.Fire.FireObstacleSettings" preserve="all" />
+    <type fullname="Obstacle.FireObstacleController" preserve="all" />
+    <type fullname="Obstacle.Magnetic.MagneticObstacleController" preserve="all" />
+    <type fullname="Obstacle.Magnetic.MagneticObstacleSettings" preserve="all" />
+    <type fullname="Obstacle.Magnetic.MagneticObstacleVisual" preserve="all" />
+    <type fullname="Obstacle.NetObstacleController" preserve="all" />
+    <type fullname="Obstacle.ObstacleMoving" preserve="all" />
+    <type fullname="Obstacle.ObstacleRotation" preserve="all" />
+    <type fullname="Obstacle.ObstacleTrigger" preserve="all" />
+    <type fullname="Obstacle.Pendulum.PendulumObstacleController" preserve="all" />
+    <type fullname="Obstacle.Riffs.VerticalRiffsObstacleController" preserve="all" />
+    <type fullname="Obstacle.Snakes.SnakesObstacleController" preserve="all" />
+    <type fullname="Obstacle.Snakes.SnakesObstacleVisual" preserve="all" />
+    <type fullname="Obstacle.SpikedWall.SpikedWallObstacleController" preserve="all" />
+    <type fullname="Obstacle.SquareStones.SquareStonesObstacleController" preserve="all" />
+    <type fullname="Obstacle.WarningMark" preserve="all" />
+    <type fullname="Scriptables.AuxiliaryItems.GliderRocketAuxiliary" preserve="all" />
+    <type fullname="Scriptables.AuxiliaryItems.SpeedPowerAuxiliary" preserve="all" />
+    <type fullname="Scriptables.BounderObstacleSettings" preserve="all" />
+    <type fullname="Scriptables.ElectricChargeSettings" preserve="all" />
+    <type fullname="Scriptables.SnakesObstacleSetting" preserve="all" />
+    <type fullname="Shop.BoosterItem" preserve="all" />
+    <type fullname="Shop.BoostersTab" preserve="all" />
+    <type fullname="Shop.GliderItem" preserve="all" />
+    <type fullname="Shop.GliderTab" preserve="all" />
+    <type fullname="SkyItem" preserve="all" />
+    <type fullname="SpeedPowerController" preserve="all" />
+    <type fullname="Tools.Components.Universal.ScrollableComponent" preserve="all" />
+    <type fullname="Tools.HideObject" preserve="all" />
+    <type fullname="UI.Windows.Scriptables.UrlsConfig" preserve="all" />
+    <type fullname="UI.Windows.Views.BoosterInventoryItem" preserve="all" />
+    <type fullname="UI.Windows.Views.ChangeNameScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.CompanyScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.ConfirmPurchaseScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.ConnectionsLostView" preserve="all" />
+    <type fullname="UI.Windows.Views.ContributionScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.GameplayScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.GameResultScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.GliderInventoryItem" preserve="all" />
+    <type fullname="UI.Windows.Views.HomeScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.InventoryScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.LeaderboardScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.MainMenuScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.MessageScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.PauseScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.PreGameScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.PurchaseCongratulationsScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.SettingsScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.ShopScreenView" preserve="all" />
+    <type fullname="UI.Windows.Views.WaitingScreenView" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
+    <type fullname="TMPro.TMP_ColorGradient" preserve="all" />
+    <type fullname="TMPro.TMP_FontAsset" preserve="all" />
+    <type fullname="TMPro.TMP_InputField" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.LineRenderer" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.BoxCollider2D" preserve="all" />
+    <type fullname="UnityEngine.CircleCollider2D" preserve="all" />
+    <type fullname="UnityEngine.PhysicsMaterial2D" preserve="all" />
+    <type fullname="UnityEngine.PolygonCollider2D" preserve="all" />
+    <type fullname="UnityEngine.Rigidbody2D" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Font" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.UI.Button" preserve="all" />
+    <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.GridLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.Image" preserve="all" />
+    <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
+    <type fullname="UnityEngine.UI.Mask" preserve="all" />
+    <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
+    <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
+    <type fullname="UnityEngine.UI.Shadow" preserve="all" />
+    <type fullname="UnityEngine.UI.Text" preserve="all" />
+    <type fullname="UnityEngine.UI.Toggle" preserve="all" />
+    <type fullname="UnityEngine.UI.ToggleGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
+    <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+  </assembly>
+</linker>
