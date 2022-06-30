@@ -59,34 +59,37 @@ async function init() {
 }
 
 async function switchNetwork() {
+    var chainId = ethers.utils.hexlify(97);
     try {
         await window.ethereum.request({
             method: 'wallet_switchEthereumChain',
-            params: [{chainId: '0x61'}],
+            params: [{chainId: chainId}],
         });
-        CompleteCallback("MetamaskService", "OnNetworkChanged", window.ethereum.networkVersion);
+        CompleteCallback("MetamaskService", "OnNetworkChanged", chainId);
     } catch (switchError) {
+        console.log(switchError.code)
         // This error code indicates that the chain has not been added to MetaMask.
         if (switchError.code === 4902) {
             try {
-                await ethereum.request({
+                await window.ethereum.request({
                     method: 'wallet_addEthereumChain',
                     params: [
                         {
-                            chainId: '0x61',
+                            chainId: chainId,
                             chainName: 'NausicaNet',
                             nativeCurrency: {
-                                name: 'BNB',
+                                name: 'Binance',
                                 symbol: 'BNB', // 2-6 characters long
-                                decimals: 9,
+                                decimals: 18,
                             },
-                            rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545/'] /* ... */,
+                            blockExplorerUrls: ['https://testnet.bscscan.com'],
+                            rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545'] /* ... */,
                         },
                     ],
                 });
                 await window.ethereum.request({
                     method: 'wallet_switchEthereumChain',
-                    params: [{chainId: '0x61'}],
+                    params: [{chainId: chainId}],
                 });
             } catch (addError) {
                 // handle "add" error
@@ -152,7 +155,7 @@ async function requestMetamaskAuth(phrase) {
         try {
             const signedMessage = await signer.signMessage(phrase);
 
-            //await switchNetwork();
+            await switchNetwork();
             
             CompleteCallback('MetamaskService', 'ConnectedToMetamaskHandler',
                 JSON.stringify({
