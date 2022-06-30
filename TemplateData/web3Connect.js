@@ -53,6 +53,47 @@ async function init() {
     contract.on("Transfer", async (from, to, value) => {
         console.log(from, to, value);
     });
+
+    const chainId = await ethereum.request({ method: 'eth_chainId' });
+    console.log(chainId);
+}
+
+async function switchNetwork() {
+    try {
+        await window.ethereum.request({
+            method: 'wallet_switchEthereumChain',
+            params: [{chainId: '0x61'}],
+        });
+        CompleteCallback("MetamaskService", "OnNetworkChanged", window.ethereum.networkVersion);
+    } catch (switchError) {
+        // This error code indicates that the chain has not been added to MetaMask.
+        if (switchError.code === 4902) {
+            try {
+                await ethereum.request({
+                    method: 'wallet_addEthereumChain',
+                    params: [
+                        {
+                            chainId: '0x61',
+                            chainName: 'NausicaNet',
+                            nativeCurrency: {
+                                name: 'BNB',
+                                symbol: 'BNB', // 2-6 characters long
+                                decimals: 9,
+                            },
+                            rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545/'] /* ... */,
+                        },
+                    ],
+                });
+                await window.ethereum.request({
+                    method: 'wallet_switchEthereumChain',
+                    params: [{chainId: '0x61'}],
+                });
+            } catch (addError) {
+                // handle "add" error
+            }
+        }
+        // handle other "switch" errors
+    }
 }
 
 async function buyBooster(price) {
@@ -111,6 +152,8 @@ async function requestMetamaskAuth(phrase) {
         try {
             const signedMessage = await signer.signMessage(phrase);
 
+            //await switchNetwork();
+            
             CompleteCallback('MetamaskService', 'ConnectedToMetamaskHandler',
                 JSON.stringify({
                     address: account,
