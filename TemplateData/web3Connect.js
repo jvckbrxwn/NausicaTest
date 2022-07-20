@@ -94,7 +94,7 @@ async function buyBooster(price) {
             try {
                 await approve();
             } catch (e) {
-                CompleteCallback("MetamaskService", "OnBuyBoosterError", e.message);
+                CompleteCallback("MetamaskService", "OnBuyBoosterError", e.data.message);
                 return;
             }
         }
@@ -104,7 +104,7 @@ async function buyBooster(price) {
         };
         await gameApi.functions.purchaseBooster(options);
     } catch (e) {
-        CompleteCallback("MetamaskService", "OnBuyBoosterError", e.message);
+        CompleteCallback("MetamaskService", "OnBuyBoosterError", "You don't have enough funds to make a purchase");
     } finally {
     }
 }

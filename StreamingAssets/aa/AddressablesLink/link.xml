@@ -45,6 +45,7 @@
     <type fullname="SpeedPowerController" preserve="all" />
     <type fullname="Tools.Components.Universal.ScrollableComponent" preserve="all" />
     <type fullname="Tools.HideObject" preserve="all" />
+    <type fullname="Tools.HideObjectWithDelay" preserve="all" />
     <type fullname="UI.Windows.Scriptables.UrlsConfig" preserve="all" />
     <type fullname="UI.Windows.Views.BoosterInventoryItem" preserve="all" />
     <type fullname="UI.Windows.Views.ChangeNameScreenView" preserve="all" />
@@ -67,6 +68,9 @@
     <type fullname="UI.Windows.Views.ShopScreenView" preserve="all" />
     <type fullname="UI.Windows.Views.WaitingScreenView" preserve="all" />
   </assembly>
+  <assembly fullname="Coffee.UIParticle, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Coffee.UIExtensions.UIParticle" preserve="all" />
+  </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
   </assembly>
@@ -84,6 +88,7 @@
     <type fullname="TMPro.TMP_InputField" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Animation" preserve="all" />
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
     <type fullname="UnityEngine.Animator" preserve="all" />
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
