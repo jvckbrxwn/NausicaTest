@@ -138,10 +138,8 @@ async function approve() {
 async function requestMetamaskAuth(phrase) {
     if (checkMetamaskInstalled()) {
         try {
-            const signedMessage = await signer.signMessage(phrase);
-
             await switchNetwork();
-            
+            const signedMessage = await signer.signMessage(phrase);
             CompleteCallback('MetamaskService', 'ConnectedToMetamaskHandler',
                 JSON.stringify({
                     address: account,
